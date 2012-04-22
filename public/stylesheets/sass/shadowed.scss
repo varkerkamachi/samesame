@@ -1,0 +1,6 @@
+@mixin shadowed($xofst, $yofst, $size, $color) {
+	  box-shadow:#{$xofst}px #{$yofst}px #{$size}px $color;
+	  -moz-box-shadow:#{$xofst}px #{$yofst}px #{$size}px $color;
+	  -webkit-box-shadow:#{$xofst}px #{$yofst}px #{$size}px $color;
+	  -o-box-shadow:#{$xofst}px #{$yofst}px #{$size}px $color;
+}

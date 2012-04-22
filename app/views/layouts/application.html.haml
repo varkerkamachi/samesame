@@ -1,0 +1,21 @@
+%html
+%html
+%head
+  %title
+    Same-Same: What do you and your bffs have in common?
+  = stylesheet_link_tag :all
+
+  = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js", "rails", :defaults
+  = csrf_meta_tag
+
+%body
+  #header
+    Yeah, I'm the header!
+
+  #wrapper
+    #logo="SameSame!"
+    #content
+      = yield
+    
+    #footer
+      =render :partial => 'home/footer/footer'

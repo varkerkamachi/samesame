@@ -1,14 +1,26 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-
+gem 'bundler', '1.1.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+#gem 'mysql'
+
+
+gem 'koala', '1.4.1'
+gem 'haml', '3.1.4'
+gem 'sass', '3.1.16'
 
 # Use unicorn as the web server
 # gem 'unicorn'
+
+group :test do
+  gem 'rspec'
+  gem 'thoughtbot-shoulda'
+  #gem 'factory_girl'
+end 
 
 # Deploy with Capistrano
 # gem 'capistrano'

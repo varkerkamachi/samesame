@@ -1,0 +1,37 @@
+@import "rounded";
+
+form{
+	position:relative;
+	color:#a9a9a7;
+	
+	input[type="text"] {
+		background:#ffffff;
+		border-top:1px inset #dedede;
+		border-left:1px inset #dedede;
+	}
+	input {
+		padding:10px 5px;
+		font-size:25px;
+	}
+	
+	input[type="submit"] {
+		@include rounded(top-right);
+		@include rounded(bottom-right);
+		@include rounded(top-left);
+		@include rounded(bottom-left);
+		border:1px solid #0c407a;
+		background:blue;
+		color:#efefef;
+		font-size:16px;
+		text-shadow:0 0 1px #0c407a;
+		padding:8px 15px;
+	}
+	
+	.form-row {
+		margin:10px auto 5px;
+	}
+	.form-row:after {
+		clear:both;
+	}
+}
+	

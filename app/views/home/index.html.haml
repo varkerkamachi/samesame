@@ -1,0 +1,15 @@
+%h1
+  Welcome!
+
+%h4
+  Get Started Now
+
+= form_for :post, :url => '/', :html => { :id => "form", :class => 'signup clear' } do |f|
+  .form-row
+    =f.label "email"
+    =f.text_field :email
+  .form-row
+    =f.label "password"
+    =f.password_field :password
+  .form-row
+    =f.submit 'submit', :class => 'right'
